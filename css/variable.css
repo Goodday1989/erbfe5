@@ -1,0 +1,63 @@
+
+:root{
+  --primary-color: rgb(1, 106, 1);
+  --secondary-color: rgb(243, 211, 252);
+  --tertiary-color: rgb(190, 248, 190);
+  --shadow-opacity: 0.4;
+  --container-width: 600px;
+  --container-width-larger: 1100px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.container{
+  display: flex;
+  max-width: var(--container-width);
+  margin: 30px auto;
+  gap: 20px;
+}
+.container-lg{
+  max-width: var(--container-width-larger);
+}
+.box{
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0, var(--shadow-opacity) );
+}
+.box-1{
+  background: var(--primary-color);
+}
+.box-2{
+  background: var(--secondary-color);
+}
+.box-3{
+  background: var(--tertiary-color);
+}
+header h1{
+  background: var(--primary-color);
+}
+.container2 {
+  max-width: 900px;
+  margin: 70px auto;
+}
+img{
+  max-width: 100%;
+  /* filter: grayscale(100%); */
+  /* filter: blur(5px); */
+  /* filter: contrast(50%); */
+  /* filter: drop-shadow(10px 10px 5px red); */
+  /* filter: hue-rotate(180deg); */
+  /* filter: invert(100%); */
+  /* filter: opacity(50%); */
+  /* filter: saturate(200%); */
+  /* filter: sepia(100%); */
+  filter: grayscale(100%) blur(5px);
+}

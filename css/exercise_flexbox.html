@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./exercise_flexbox.css" />
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <!--  main>.hero{Flexbox Layout Challenge}+.nav-bar>.nav-item$*4^.container>sec>h2+p^.side-bar>h3+ul>li.side-item${Post $}*5 -->
+    <!-- nav-bar should have used ul and li to contain the a element, impossible to add background color to them if only a element -->
+    <!-- should have used ARTICLE instead of sec, ASIDE instead of div -->
+    <main>
+      <div class="hero"><p>Flexbox Layout Challenge</p></div>
+      <div class="nav-bar">
+        <a href="#" class="nav-item1">Home</a>
+        <a href="#" class="nav-item2">About</a>
+        <a href="#" class="nav-item3">Services</a>
+        <a href="#" class="nav-item4">Contact</a>
+      </div>
+      <div class="container">
+        <sec>
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A ullam
+            architecto nesciunt deleniti vel adipisci molestiae nam quisquam
+            repellendus praesentium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+            neque aut ex nam! Sint quae officia optio hic maiores dolor.
+          </p>
+        </sec>
+        <div class="side-bar">
+          <h3>Recent Posts</h3>
+          <ul>
+            <li class="side-item1"><a href="#">Post 1</a></li>
+            <li class="side-item2"><a href="#">Post 2</a></li>
+            <li class="side-item3"><a href="#">Post 3</a></li>
+            <li class="side-item4"><a href="#">Post 4</a></li>
+            <li class="side-item5"><a href="#">Post 5</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

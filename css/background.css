@@ -1,0 +1,61 @@
+body{
+  font-family: "Tinos",Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.hero{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+/* background color */
+background-color: bisque;
+/* background image */
+background-image: url(./background_texture.jpg);
+/* usually use the following 3 properties for image background */
+/* background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background: url(./background_texture.jpg) no-repeat center/cover; */
+
+/* background color linear gradient */
+background: linear-gradient(to bottom right, red,15%,lightgreen,blue);
+}
+.hero h1{
+  font-size: 40px;
+  color: white;
+}
+.hero p{
+  font-size: 18px;
+color: white;
+}
+.hero p+p{
+  text-transform: capitalize;
+}
+/* regular link */
+.hero a{
+  text-decoration: none;
+  color: gray;
+}
+/* hover */
+.hero a:hover{
+  color: rgb(35, 34, 34);
+}
+/* active */
+.hero a:active{
+  color: blue;
+}
+/* focus */
+.hero a:focus{
+  outline: 2px solid coral;
+}
+/* visited */
+.hero a:visited{
+  color: red;
+}
+/* visited hover */
+.hero a:visited:hover{
+  color: purple;
+}

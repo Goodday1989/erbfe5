@@ -1,0 +1,50 @@
+*{
+  margin: 0px ;
+  padding: 0px;
+}
+
+.box{
+  background-color: darkblue;
+  color: white;
+  /* padding: 20px; */
+  /* padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 70px;
+  padding-left: 100px; */
+  /* padding shorthand top right bottom left */
+  padding: 20px 50px 70px 100px;
+  /* padding: 20px 50px; shorthand for top/bottom and left/right */
+  /* padding 20px 50px 40px shorthand for top left/right bottom */
+  /* border: 3px solid green; */
+  border-color: red;
+  border-style: dotted;
+  border-width: 15px;
+  border-top-color: yellow;
+  border-bottom-color: aquamarine;
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+.box-1{
+  width: 50%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.box-2{
+  width: 10%;
+  overflow: hidden;
+}
+.box-3{
+  width: 10%;
+  max-width: 800px;
+  min-width: 500px;
+}
+
+.box-2 p{
+  width: 10%;
+}

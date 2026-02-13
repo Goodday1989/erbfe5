@@ -1,0 +1,94 @@
+/* universal selector */
+*{
+  word-spacing: 30px;
+}
+/* element selector*/
+h2{
+  color: #55eb14;
+}
+/* id selector */
+#heading {
+  color: blue;
+}
+/* */
+#unique-box{
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+/* class's direct element ( > ) */
+.box > h2{
+  color: red;
+}
+
+/* element's direct child*/
+span>h2{
+  color: yellow;
+}
+
+/* class direct class*/
+.box > .child{
+  color: peru;
+}
+
+.simple{
+  color: purple;
+}
+
+.box{
+  background-color: rgb(180, 243, 243);
+}
+/* multiple class within element */
+.inner-box.first-box{
+  color: pink
+}
+
+/* descendant class child,grandchild*/
+.box .inner-box{
+  background-color: green;
+}
+
+/* descendant element,child,grandchild */
+div h2{
+  font-size: 5px;
+}
+/* adjacent sibling */
+.first + li + li{
+  background-color: green;
+}
+
+/* general sibling */
+.first ~ li{
+  color: red;
+}
+
+/* nth child */
+ul li:nth-child(2n){
+  font-size: 30px;
+}
+
+/* attribute selector */
+input[type=text]{
+  border: 2px solid blue;
+  padding: 15px;
+}
+
+/* pseudo element */
+p::first-line{
+  font-weight: bold;
+}
+/* pseudo class */
+.pseudo-class:hover{
+  text-decoration: underline;
+  color: red;
+}
+
+/* multiple selector */
+h4, h5{
+  font-size: 20px;
+}
+
+/* states */
+/* a:link, a:hover, a:active, a:focus, a:visited */
+
+/* when checking which css property is able to run on which browser, edge=chrome because edge uses chrome v8 engine*/

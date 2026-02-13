@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+  text-align: left;
+  line-height: 1.7;
+}
+body{
+  background-color: #27264a;
+  line-height: 1.5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+  max-width: 1000px;
+  background-color: white;
+  margin: 10px auto 20px;
+  border-radius: 10px;
+}
+main>article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  flex: 1;
+}
+article>section{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+min-width: 150px;
+padding: 20px;
+/* remember to set flex-grow and shrink for flex box in order for them to be responsive */
+flex: 1;
+}
+main>article>section>article{
+  font-size: 30px;
+}
+header{
+  margin: 30px 30px 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 25px 5px;
+}
+.card1 header{
+  width:80%;
+  height: 30px;
+}
+.card2 header{
+  background: #d7c3e8;
+  background: linear-gradient(to right, rgb(191, 220, 249) 0%, rgb(113, 29, 176) 50%);
+  width:80%;
+  height: 30px;
+  color: white;
+}
+.card3 header{
+  background: #e8dec3;
+background: linear-gradient(65deg, rgb(71, 28, 225) 0%, rgb(243, 188, 145) 50%);
+  width:80%;
+  height:30px;
+  color: white;
+}
+article>section>article{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+sup{
+  letter-spacing: 2px;
+
+}
+sub{
+  vertical-align: 1px;
+}
+sub, sup{
+  font-size: 13px;
+}
+p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+h3{
+  font-size: 12px;
+}
+h3+p{
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* button vs a link, button without form will have no destination,so for no-form situations we will use a link*/
+a, button{
+  font-size: 10px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  border-radius: 3px;
+  border: 1px solid black;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+.card1 a, .card3 a,.card2 a:hover,.card2 button:hover, .card1 button, .card3 button{
+  background-color: white;
+  color: black;
+}
+.card1 a:hover, .card3 a:hover,.card2 a, .card2 button, .card1 button:hover, .card3 button:hover{
+  background-color: rgb(4, 4, 4);
+  color: rgb(255, 254, 254);
+}
+ul li{
+  font-size: 12px;
+}
+li::marker {
+  /* Adds a heavy check mark (✔) and a space for separation */
+  content: "\2713  ";
+  color: green; /* Customize the color of the check mark */
+  font-size: 1.2em; /* Adjust the size */
+}
+@media (max-width: 768px){
+  main>article{
+    flex-direction: column;
+  }
+  main>article>section{
+    margin:2rem;
+    padding: 40px 30px
+  }
+}

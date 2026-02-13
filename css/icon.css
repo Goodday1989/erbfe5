@@ -1,0 +1,14 @@
+body {
+  font-size: 20px;
+}
+body h3{
+  text-transform: capitalize;
+}
+.fa-circle{
+  font-size: 300px;
+  color: green;
+}
+.fa-facebook{
+  font-size: 50px;
+  color: blue;
+}

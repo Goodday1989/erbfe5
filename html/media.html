@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+  </head>
+  <body>
+    <!-- audio -->
+    <audio src="./file_example_MP3_1MG.mp3" type="audio/mp3" controls></audio>
+    <!-- audio with message -->
+    <audio controls>
+      <source src="./file_example_MP3_1MG.mp3" type="audio/mp3" />
+      <p>Your browser does not support the audio element.</p>
+    </audio>
+    <!-- audio with autoplay -->
+    <audio controls autoplay>
+      <source src="./file_example_MP3_1MG.mp3" type="audio/mp3" />
+      <p>Your browser does not support the audio element.</p>
+    </audio>
+    <!-- audio with loop -->
+    <audio controls loop>
+      <source src="./file_example_MP3_1MG.mp3" type="audio/mp3" />
+      <p>Your browser does not support the audio element.</p>
+    </audio>
+    <!-- video -->
+    <video controls width="400" height="300">
+      <source src="./file_example_MP4_480_1_5MG.mp4" type="video/mp4" />
+    </video>
+    <!-- iframe -->
+    <iframe
+      src="./invoice.pdf"
+      frameborder="0"
+      width="400"
+      height="300"
+    ></iframe>
+    <!-- lazy loading means words go first, map comes next to enhance UX. Alternate solution is to put map on the bottom of website-->
+    <!-- referrer policy means youtube logo -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14764.405822262408!2d114.22371625000001!3d22.312002450000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2shk!4v1770171681214!5m2!1szh-TW!2shk"
+      width="400"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        z clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

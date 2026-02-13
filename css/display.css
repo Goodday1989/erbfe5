@@ -1,0 +1,33 @@
+/* *{
+  border: 1px solid black;
+} */
+
+.none-el{
+  display: none;
+}
+
+.hidden-el{
+  visibility: hidden;
+}
+/* inline elements don't have top and bottom padding and margin */
+p{
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+}
+a{
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: aqua;
+  margin: 20px 10px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+/* 6 display properties most used : none,block, inline, inline-block, flex, grid */
+/* position properties : static, relative, absolute, fixed, sticky */
+h1{text-transform: capitalize;}

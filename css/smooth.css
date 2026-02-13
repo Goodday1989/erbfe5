@@ -1,0 +1,76 @@
+:root{
+  --header-transparency: 0.9;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  /*must be declare at root*/
+  scroll-behavior: smooth;
+}
+body{
+  text-transform: capitalize;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  line-height: 1.6;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+p{
+  margin-bottom: 20px;
+}
+img{
+  max-width: 100%;
+  width: 100%;
+}
+.container{
+  max-width: 700px;
+  margin: 0 auto;
+}
+.header{
+  background: linear-gradient(45deg, red, blue);
+  padding: 10px 0;
+  margin-bottom: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.header .menu ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.header .menu a{
+  color: antiquewhite;
+}
+.header .menu a:hover{
+  color: rgb(171, 165, 0);
+}
+.section{
+  margin: 30px 0;
+  padding-top: 49px;
+}
+.section h2{
+  margin-bottom: 20px;
+  text-align: center;
+  background: linear-gradient(45deg ,red ,blue);
+  color:antiquewhite
+}
+/* if dot and tag stick together,can treat them as a multiple selector, like class"section home" */
+.section#home{
+  margin-bottom: 100px;
+}
+.header.transparent{
+  background: linear-gradient(
+    45deg,
+    rgba( 255,0,0,var(--header-transparency)),
+    rgba(0,0,255,var(--header-transparency))
+    );
+}

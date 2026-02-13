@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- embedded google font code needs to be manually tweaked in order to maximize loading speed-->
+    <link rel="stylesheet" href="./exercise_shoes.css" />
+    <title>shoes</title>
+  </head>
+  <body>
+    <!-- usually a pc monitor is 1200px, active space is 1100px left right 50px margin , tailwinds font weighting ranges from 50 to 900-->
+    <!-- font formats, nowadays usually WOFF or WOFF 2.0 because they load much faster -->
+    <!-- font-family, font-size,font weight, font-style, line-height, text-align, text-decoration,text-transform,text-indent -->
+    <main>
+      <section>
+        <!-- pure html allows card tag, but react does not recognize card tag, thus put card in class instead -->
+
+        <!-- sporty -->
+        <div class="card card-sporty">
+          <h2 class="sporty">keep it sporty</h2>
+          <p>Shoes to keep you active and healthy</p>
+          <button>View Collection</button>
+        </div>
+        <!-- causal -->
+        <div class="card card-causal">
+          <h2 class="causal">Keep It Causal</h2>
+          <p>Shoes to keep you comfortable.</p>
+          <button>View Collection</button>
+        </div>
+        <!-- professional -->
+        <div class="card card-formal">
+          <h2 class="formal">Keep It Formal</h2>
+          <p>Shoes to keep you looking sharp.</p>
+          <button>View Collection</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

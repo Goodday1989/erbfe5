@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* remember to set font-family and line-height for body */
+body{
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+}
+.hero{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(208, 104, 7);
+}
+.hero p{
+  margin-left: 30px;
+  font-size:xx-large;
+  font-weight:bolder;
+}
+.nav-bar{
+  display: flex;
+  font-size: large;
+  font-weight: bold;
+  padding: 0 15px;
+}
+a{
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: orangered;
+}
+.container{
+  display: flex;
+  margin: 20px 10px;
+  justify-content: space-between;
+}
+sec{
+  margin-left: 25px;
+}
+sec > p{
+  margin: 20px 0px;
+  padding-right: 20px;
+  font-size: 18px;
+}
+.side-bar{
+  width: 300px;
+  min-width: 150px;
+}
+.side-bar h3{
+  color: white;
+  font-size: medium;
+  background-color: rgb(208, 104, 7);
+  padding: 8px;
+}
+.side-bar ul{
+  list-style: none;
+  font-size: 15px;
+}
+.side-bar ul li{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.252);
+  padding: 10px 0;
+}
