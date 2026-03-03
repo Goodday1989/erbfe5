@@ -19,7 +19,8 @@
         <div class="logo">
           <img src="/css/accessibility-svgrepo-com.svg" alt="logo" />
         </div>
-        <h1>shopping list</h1>
+        <h1 id="app-title">shopping list</h1>
+        <!-- <a href="#">google</a> -->
       </header>
       <form id="item-form">
         <div class="form-control">
@@ -45,23 +46,24 @@
           id="filter"
           placeholder="filter items"
         />
-        <ul id="item-list" class="items">
-          <li>
+        <ul id="item-list" class="items parent">
+          <!-- this is a comment for node list -->
+          <li class="item">
             apple<button class="remove-item btn-link text-red">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </li>
-          <li>
+          <li class="item">
             orange<button class="remove-item btn-link text-red">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </li>
-          <li>
+          <li class="item">
             mango<button class="remove-item btn-link text-red">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </li>
-          <li>
+          <li class="item">
             banana<button class="remove-item btn-link text-red">
               <i class="fa-solid fa-xmark"></i>
             </button>
@@ -70,6 +72,6 @@
         <button id="clear" class="btn-clear">clear all</button>
       </div>
     </div>
-    <script src="./1.shopping-list.js"></script>
+    <script src="./10.remove elements.js"></script>
   </body>
 </html>

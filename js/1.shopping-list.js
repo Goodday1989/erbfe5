@@ -13,4 +13,32 @@ output = document.body;
 //======================
 //from element inspect direct children
 output = document.body.children;
+// other elements types
+// meta portion
+output = document.domain;
+output = document.URL;
+output = document.doctype;
+output = document.characterSet;
+output = document.contentType;
+// forms
+output = document.forms;
+output = document.forms[0];
+output = document.forms[0].id;
+output = document.forms[0].method;
+output = document.forms[0].action;
+document.forms[0].id = "new-id";
+output = document.forms[0].id;
+// links
+output = document.links;
+output = document.links[0];
+output = document.links[0].href = "https://facebook.com";
+output = document.links[0].className = "text-red";
+output = document.links[0].classList;
+// image
+output = document.images;
+output = document.images[0];
+output = document.images[0].src;
+//convert HTMLcollection to array type and apply forEach to loop through
+const forms = Array.from(document.forms);
+forms.forEach((form) => console.log(form));
 console.log(output);
