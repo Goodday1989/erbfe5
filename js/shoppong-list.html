@@ -20,7 +20,7 @@
           <img src="/css/accessibility-svgrepo-com.svg" alt="logo" />
         </div>
         <h1 id="app-title">shopping list</h1>
-        <!-- <a href="#">google</a> -->
+        <a href="#">google</a>
       </header>
       <form id="item-form">
         <div class="form-control">
@@ -30,8 +30,19 @@
             class="form-input"
             name="item"
             placeholder="enter item"
+            value="10"
           />
+          <!-- value attribute is usually used by backend when returning result from server -->
         </div>
+        <!-- <select name="priority" id="priority-input" class="form-input">
+          <option value="0">Select priority</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <input type="checkbox" class="checkout" id="checkbox" />recurring item
+        <br /> -->
         <div class="form-control">
           <button class="btn" type="submit">
             <i class="fa-solid fa-plus"></i>
@@ -72,6 +83,6 @@
         <button id="clear" class="btn-clear">clear all</button>
       </div>
     </div>
-    <script src="./10.remove elements.js"></script>
+    <script src="./18.event bubble.js"></script>
   </body>
 </html>
